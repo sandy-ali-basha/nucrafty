@@ -1,0 +1,393 @@
+$leftPadding: 12vw;
+$backgroundGradient: linear-gradient(
+  90deg,
+  #3b0341 0.13%,
+  #3b0341 11.35%,
+  #8f1982 38.06%,
+  #c0301d 62.35%,
+  #df853d 93.11%
+);
+.HeaderVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+}
+.BeUniqueDiv {
+  background: $backgroundGradient;
+  padding: 3vw $leftPadding;
+  h1 {
+    color: #ffffff;
+    font-family: "CocoSharp-heavy" !important;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 72px;
+  }
+  p {
+    font-family: "CocoSharp" !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 36px;
+    color: white;
+  }
+}
+.journeySection {
+  padding: 5vw $leftPadding;
+  .contentDiv {
+    width: fit-content;
+  }
+  h2 {
+    font-family: "CocoSharp-Heavy" !important;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 90px;
+    color: #8f1982;
+    text-align: justify;
+  }
+  p {
+    font-family: "CocoSharp-Light" !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+    color: #8f1982;
+    text-align: justify;
+  }
+}
+.BtnPurple {
+  background: #8f1982;
+  box-shadow: 0px 0px 1px rgba(0, 41, 120, 0.05),
+    0px 2px 4px rgba(30, 126, 229, 0.1);
+  border-radius: 50px;
+  padding: 18px;
+  float: right;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  @include media("<=phone") {
+    float: initial;
+  }
+}
+
+.picturesAndText {
+  padding: 5vw $leftPadding;
+  .onePicOneText {
+    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8vw;
+    align-items: center;
+    @include media("<=phone") {
+      flex-direction: column;
+    }
+    &:nth-child(even) {
+      @include media("<=phone") {
+        flex-direction: column;
+      }
+      flex-direction: row-reverse;
+      .text {
+        margin-inline-start: auto;
+        margin-inline-end: -12vw;
+        @include media("<=phone") {
+          margin-inline-end: auto;
+        }
+      }
+    }
+    position: relative;
+    .squareBg {
+      background: #f5f5f5;
+      width: 30vw;
+      height: 66vh;
+      position: absolute;
+      right: -50px;
+      top: -4vh;
+      z-index: -1;
+      @include media("<=phone") {
+        display: none;
+      }
+    }
+    .leftsquareBg {
+      left: -50px;
+      right: auto !important;
+      @include media("<=phone") {
+        position: relative;
+        top: auto;
+        right: auto;
+        z-index: initial;
+      }
+    }
+    img {
+      width: 45vw;
+      @include media("<=phone") {
+        width: 80vw;
+        margin: auto;
+      }
+    }
+    .text {
+      margin-inline-start: -12vw;
+      @include media("<=phone") {
+        margin-inline-start: auto;
+        width: 80vw;
+      }
+      h2 {
+        font-family: "CocoSharp-Heavy" !important;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 45px;
+        color: #8f1982;
+      }
+      p {
+        font-family: "CocoSharp-Light" !important;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 26px;
+        color: #8f1982;
+      }
+    }
+    .UniqueProduct {
+      left: 45% !important;
+      @include media("<=phone") {
+        position: relative;
+        left: auto !important;
+      }
+    }
+    .Meet_the_designer_btn {
+      font-family: "Quicksand";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 30px;
+      text-align: center;
+      color: #ffffff;
+      background: #df853d;
+      box-shadow: 0px 0px 1px rgba(0, 41, 120, 0.05),
+        0px 2px 4px rgba(30, 126, 229, 0.1);
+      border-radius: 50px;
+      padding: 18px;
+      width: auto;
+      border: none;
+      position: absolute;
+      bottom: -30px;
+      left: 33%;
+      @include media("<=phone") {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        position: initial;
+      }
+    }
+  }
+}
+.orangeSectionContainer {
+  padding: 5vh 5vw;
+}
+.orangeSection {
+  padding: 5vh 5vw;
+
+  background: #df853d;
+  box-shadow: 9px 10px 17px rgba(0, 0, 0, 0.15);
+  position: relative;
+  .squareBg {
+    background: #f5f5f5;
+    width: 60%;
+    height: 110%;
+    position: absolute;
+    right: -3vh;
+    top: -3vh;
+
+    z-index: -1;
+  }
+  h2 {
+    font-family: "CocoSharp-Heavy" !important;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 45px;
+    color: #ffffff;
+  }
+  p {
+    font-family: "CocoSharp-Light" !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+    color: #ffffff;
+    text-align: justify;
+  }
+}
+.purpleSection {
+  padding: 0vh 12vw;
+  h2 {
+    font-family: "CocoSharp-Heavy" !important;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 51px;
+    color: #8f1982;
+  }
+  p {
+    font-family: "CocoSharp-Light" !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+    color: #8f1982;
+  }
+}
+.towColors {
+  .purpleSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #8f1982;
+    padding: 5vw;
+    margin: 5vw 5vw 0vw 5vw;
+    position: relative;
+    @include media("<=phone") {
+      flex-direction: column;
+    }
+  }
+  .textAndBtn {
+    width: 50vw;
+    margin-left: auto;
+    @include media("<=phone") {
+      width: 80vw;
+      margin-top: 3vh;
+    }
+    h2 {
+      font-family: "CocoSharp-Heavy" !important;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 34px;
+      line-height: 51px;
+      color: #ffffff;
+      padding-inline-start: 3vw;
+    }
+    .orangeBtn {
+      background: #df853d;
+      box-shadow: 0px 0px 1px rgba(0, 41, 120, 0.05),
+        0px 2px 4px rgba(30, 126, 229, 0.1);
+      border-radius: 50px;
+      font-size: 24px;
+      line-height: 30px;
+      text-align: center;
+      color: #ffffff;
+      padding: 18px;
+      width: fit-content;
+      margin-left: auto;
+    }
+  }
+  .GirleImg {
+    position: absolute;
+    width: 22vw;
+    height: 56vh;
+    left: 7vw;
+    top: 5vw;
+    @include media("<=phone") {
+      width: 80vw;
+      height: 30vh;
+      position: initial;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 10%;
+    }
+  }
+  .gradientBg {
+    height: 20vh;
+    background: linear-gradient(
+      90deg,
+      #3b0341 0.13%,
+      #3b0341 11.35%,
+      #8f1982 38.06%,
+      #c0301d 62.35%,
+      #df853d 93.11%
+    );
+    box-shadow: 0px -5px 17px rgba(0, 0, 0, 0.15);
+    @include media("<=phone") {
+      display: none;
+    }
+  }
+}
+.ourTeam {
+  margin-top: 3vw;
+  .OurTeamTitle {
+    font-family: "CocoSharp-Heavy" !important;
+    font-weight: 900;
+    font-size: 34px;
+    font-style: normal;
+    line-height: 51px;
+    text-align: center;
+    color: #44403c;
+  }
+  .contaier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media("<=phone") {
+      flex-direction: column;
+    }
+    .TeamCard {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-inline: 2vw;
+      margin-top: 3vw;
+      img {
+        width: 22vw;
+        height: 22vw;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      h3,
+      h4 {
+        font-family: "Quicksand" !important;
+        font-style: normal;
+        color: #44403c;
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 10px;
+      }
+      h4 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
+  }
+}
+.JoinUs {
+  background: $backgroundGradient;
+  box-shadow: 0px -5px 17px rgba(0, 0, 0, 0.08);
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5vw;
+  h2 {
+    font-family: "CocoSharp-Heavy" !important;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 72px;
+    color: #ffffff;
+    margin-bottom: 3vh;
+  }
+  .BtnPurple {
+    width: fit-content;
+  }
+}

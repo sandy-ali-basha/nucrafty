@@ -1,0 +1,244 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-SemiBold.eot");
+  src: url("../fonts/Quicksand-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Quicksand-SemiBold.woff2") format("woff2"),
+    url("../fonts/Quicksand-SemiBold.woff") format("woff"),
+    url("../fonts/Quicksand-SemiBold.svg#Quicksand-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Bold.eot");
+  src: url("../fonts/Quicksand-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Quicksand-Bold.woff2") format("woff2"),
+    url("../fonts/Quicksand-Bold.woff") format("woff"),
+    url("../fonts/Quicksand-Bold.svg#Quicksand-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Light.eot");
+  src: url("../fonts/Quicksand-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Quicksand-Light.woff2") format("woff2"),
+    url("../fonts/Quicksand-Light.woff") format("woff"),
+    url("../fonts/Quicksand-Light.svg#Quicksand-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Medium.eot");
+  src: url("../fonts/Quicksand-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Quicksand-Medium.woff2") format("woff2"),
+    url("../fonts/Quicksand-Medium.woff") format("woff"),
+    url("../fonts/Quicksand-Medium.svg#Quicksand-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Regular.eot");
+  src: url("../fonts/Quicksand-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Quicksand-Regular.woff2") format("woff2"),
+    url("../fonts/Quicksand-Regular.woff") format("woff"),
+    url("../fonts/Quicksand-Regular.svg#Quicksand-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+// cocosharp
+@font-face {
+  font-family: "CocoSharp-HeavyItalic";
+  src: url("../fonts/CocoSharp/CocoSharpTrial-HeavyItalic.eot");
+  src: url("../fonts/CocoSharp/CocoSharpTrial-HeavyItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-HeavyItalic.woff2") format("woff2"),
+    url("../fonts/CocoSharp/CocoSharpTrial-HeavyItalic.woff") format("woff"),
+    url("../fonts/CocoSharp/CocoSharpTrial-HeavyItalic.ttf") format("truetype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-HeavyItalic.svg#CocoSharpTrial-HeavyItalic")
+      format("svg");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharp-Italic";
+  src: url("../fonts/CocoSharp/CocoSharpTrial-Italic.eot");
+  src: url("../fonts/CocoSharp/CocoSharpTrial-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Italic.woff2") format("woff2"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Italic.woff") format("woff"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Italic.ttf") format("truetype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Italic.svg#CocoSharpTrial-Italic")
+      format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharp-Heavy";
+  src: url("../fonts/CocoSharp/CocoSharpTrial-Heavy.eot");
+  src: url("../fonts/CocoSharp/CocoSharpTrial-Heavy.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Heavy.woff2") format("woff2"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Heavy.woff") format("woff"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Heavy.ttf") format("truetype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Heavy.svg#CocoSharpTrial-Heavy")
+      format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharp-LightItalic";
+  src: url("../fonts/CocoSharp/CocoSharpTrial-LightItalic.eot");
+  src: url("../fonts/CocoSharp/CocoSharpTrial-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-LightItalic.woff2") format("woff2"),
+    url("../fonts/CocoSharp/CocoSharpTrial-LightItalic.woff") format("woff"),
+    url("../fonts/CocoSharp/CocoSharpTrial-LightItalic.ttf") format("truetype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-LightItalic.svg#CocoSharpTrial-LightItalic")
+      format("svg");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharp-Light";
+  src: url("../fonts/CocoSharp/CocoSharpTrial-Light.eot");
+  src: url("../fonts/CocoSharp/CocoSharpTrial-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Light.woff2") format("woff2"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Light.woff") format("woff"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Light.ttf") format("truetype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Light.svg#CocoSharpTrial-Light")
+      format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharp";
+  src: url("../fonts/CocoSharp/CocoSharpTrial-Regular.eot");
+  src: url("../fonts/CocoSharp/CocoSharpTrial-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Regular.woff2") format("woff2"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Regular.woff") format("woff"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Regular.ttf") format("truetype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Regular.svg#CocoSharpTrial-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharp-BoldItalic";
+  src: url("../fonts/CocoSharp/CocoSharpTrial-BoldItalic.eot");
+  src: url("../fonts/CocoSharp/CocoSharpTrial-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-BoldItalic.woff2") format("woff2"),
+    url("../fonts/CocoSharp/CocoSharpTrial-BoldItalic.woff") format("woff"),
+    url("../fonts/CocoSharp/CocoSharpTrial-BoldItalic.ttf") format("truetype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-BoldItalic.svg#CocoSharpTrial-BoldItalic")
+      format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharp-ExtraboldItalic";
+  src: url("../fonts/CocoSharp/CocoSharpTrial-ExtraboldItalic.eot");
+  src: url("../fonts/CocoSharp/CocoSharpTrial-ExtraboldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-ExtraboldItalic.woff2")
+      format("woff2"),
+    url("../fonts/CocoSharp/CocoSharpTrial-ExtraboldItalic.woff") format("woff"),
+    url("../fonts/CocoSharp/CocoSharpTrial-ExtraboldItalic.ttf")
+      format("truetype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-ExtraboldItalic.svg#CocoSharpTrial-ExtraboldItalic")
+      format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharp-Bold";
+  src: url("../fonts/CocoSharp/CocoSharpTrial-Bold.eot");
+  src: url("../fonts/CocoSharp/CocoSharpTrial-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Bold.woff2") format("woff2"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Bold.woff") format("woff"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Bold.ttf") format("truetype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Bold.svg#CocoSharpTrial-Bold")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharp-Extrabold";
+  src: url("../fonts/CocoSharp/CocoSharpTrial-Extrabold.eot");
+  src: url("../fonts/CocoSharp/CocoSharpTrial-Extrabold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Extrabold.woff2") format("woff2"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Extrabold.woff") format("woff"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Extrabold.ttf") format("truetype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-Extrabold.svg#CocoSharpTrial-Extrabold")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharp-ExtraLightItalic";
+  src: url("../fonts/CocoSharp/CocoSharpTrial-ExtraLightItalic.eot");
+  src: url("../fonts/CocoSharp/CocoSharpTrial-ExtraLightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-ExtraLightItalic.woff2")
+      format("woff2"),
+    url("../fonts/CocoSharp/CocoSharpTrial-ExtraLightItalic.woff")
+      format("woff"),
+    url("../fonts/CocoSharp/CocoSharpTrial-ExtraLightItalic.ttf")
+      format("truetype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-ExtraLightItalic.svg#CocoSharpTrial-ExtraLightItalic")
+      format("svg");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CocoSharp-ExtraLight";
+  src: url("../fonts/CocoSharp/CocoSharpTrial-ExtraLight.eot");
+  src: url("../fonts/CocoSharp/CocoSharpTrial-ExtraLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-ExtraLight.woff2") format("woff2"),
+    url("../fonts/CocoSharp/CocoSharpTrial-ExtraLight.woff") format("woff"),
+    url("../fonts/CocoSharp/CocoSharpTrial-ExtraLight.ttf") format("truetype"),
+    url("../fonts/CocoSharp/CocoSharpTrial-ExtraLight.svg#CocoSharpTrial-ExtraLight")
+      format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}

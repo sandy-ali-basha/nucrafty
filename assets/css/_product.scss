@@ -1,0 +1,441 @@
+.product_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 42px;
+  margin-top: 1rem;
+  width: 100%;
+  color: #57534e;
+}
+.product {
+  padding-inline-start: 5vw;
+  padding-inline-end: 5vw;
+
+  .filter {
+    width: fit-content;
+    margin-inline-start: auto;
+    @include media("<=tablet") {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .seeAll {
+      text-decoration-line: underline;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #8f1982;
+      margin-inline-end: 0.5rem;
+    }
+  }
+}
+.product_cards {
+  flex-wrap: wrap;
+  .card {
+    border: none !important;
+  }
+  .card_body {
+    justify-content: space-between;
+    align-items: center;
+    .product_name,
+    .product_price {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #44403c;
+    }
+  }
+  .card-img-top {
+    height: 40vh !important;
+    object-fit: cover;
+    @include media("<=tablet") {
+      height: 20vh !important;
+    }
+    @include media("<=phone") {
+      height: 40vh !important;
+    }
+  }
+  .cardIcon {
+    margin-inline: 0.2rem;
+    img {
+      width: 2vw;
+    }
+  }
+}
+.cardsPagination {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #44403c !important;
+  text-decoration: none;
+}
+
+.events {
+  background: url("../images/happy.jpg") center/cover no-repeat;
+  width: 100%;
+  height: 60vh;
+  margin-bottom: 3rem;
+  padding-bottom: 5vw;
+  border: $border_bottom;
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 5vw;
+  justify-content: center;
+  align-items: flex-start;
+  box-shadow: inset 0px -66vh 0 0 #dbdbdbbd;
+  position: relative;
+  @include media("<=tablet") {
+    height: 30vh;
+  }
+  @include media("<=phone") {
+    margin-top: 20px;
+    padding-bottom: 0.5rem;
+  }
+  &::before {
+    content: " ";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: grayscale(1);
+  }
+  h1,
+  h2 {
+    font-weight: 600;
+    line-height: 42px;
+    color: #44403c;
+    @include media("<=phone") {
+      line-height: initial;
+    }
+  }
+  h1 {
+    font-size: 34px;
+    z-index: 3;
+    @include media("<=phone") {
+      font-size: 1.2rem;
+    }
+  }
+  h2 {
+    font-size: 20px;
+    z-index: 3;
+    @include media("<=phone") {
+      font-size: 1rem;
+    }
+  }
+  button {
+    z-index: 3;
+    background: #8f1982;
+    box-shadow: 0px 0px 1px rgba(0, 41, 120, 0.05),
+      0px 2px 4px rgba(30, 126, 229, 0.1);
+    border-radius: 3px;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.7rem 1.4rem;
+    border: none;
+    @include media("<=phone") {
+      font-size: 0.8rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+}
+* {
+  transition: all 0.5s;
+}
+.TrendingDesingers {
+  padding-bottom: 5vw;
+  padding-inline-start: 5vw;
+  width: 99vw;
+  overflow: scroll;
+  * {
+    box-sizing: border-box;
+  }
+
+  .designerContainer {
+    width: max-content;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    transition: all 2s;
+    padding-left: 5vw;
+
+    .cardContainer {
+      &:hover {
+        transition: 0.5s;
+        .TrendingDesingers_name {
+          opacity: 0;
+        }
+        .TrendingDesingers_Img {
+          border: 10px solid transparent;
+        }
+      }
+    }
+
+    .designer_card {
+      text-align: center;
+      transition: 0.5s;
+      margin-left: -5vw;
+
+      .TrendingDesingers_Img {
+        width: 23vw;
+        height: 23vw;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+        border-radius: 50%;
+        border: 10px solid rgb(255, 255, 255);
+        @include media("<=tablet") {
+          width: 27vw;
+          height: 27vw;
+        }
+      }
+    }
+    .idCard {
+      background: #e8e8e8;
+      padding: 2rem 2rem 2rem 14vw;
+      margin: 10px;
+      height: calc(23vw - 20px);
+      margin-inline-start: -11.5vw;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      opacity: 0;
+      width: 30vw;
+      box-shadow: 10vw 0px #ffff;
+      animation-fill-mode: both;
+      display: none;
+      @include media("<=tablet") {
+        height: calc(27vw - 20px);
+        width: 40vw;
+      }
+      h3,
+      h4 {
+        font-style: normal;
+        font-weight: 600;
+        width: 100%;
+        color: #57534e;
+        @include media("<=tablet") {
+          font-size: 1rem;
+        }
+      }
+      h3 {
+        font-size: 20px;
+      }
+      h4 {
+        font-size: 15px;
+      }
+    }
+  }
+}
+.purpleBtn {
+  background: #8f1982;
+  box-shadow: 0px 0px 1px rgba(0, 41, 120, 0.05),
+    0px 2px 4px rgba(30, 126, 229, 0.1);
+  border-radius: 3px;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  @include media("<=tablet") {
+    font-size: 0.8rem;
+  }
+  &:hover {
+    color: white;
+    background: #7c0c6f;
+  }
+}
+.CardfadeIn {
+  animation: CardfadeIn 2s both;
+  display: flex !important;
+  opacity: 0;
+  flex-direction: row;
+  width: 100%;
+  transform: all 2s;
+}
+.TrendingDesingers_name {
+  transition: 0.5s;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #44403c;
+  margin-top: 1rem;
+  @include media("<=phone") {
+    font-size: 1rem;
+  }
+}
+.slideLeft {
+  animation: scaleLeft 2s both;
+  margin-left: 10vw;
+}
+@keyframes scaleLeft {
+  0% {
+    margin-left: 0vw;
+  }
+  100% {
+    margin-left: 10vw;
+  }
+}
+@keyframes CardfadeIn {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: flex;
+  }
+}
+.craftsmen {
+  padding-top: 5vh;
+  padding-left: 5vw;
+}
+.line {
+  padding: 5vh 7vw;
+  border-bottom: $border_bottom;
+  @include media("<=tablet") {
+    padding: 5vw 2vw;
+  }
+}
+.craftsmenImgsContainer {
+  width: 94vw;
+  overflow: scroll;
+}
+.craftsmenImgs {
+  padding-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  width: max-content;
+  z-index: 3;
+  .craftsmenContainer {
+    margin-left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px 30px 30px 0px;
+    &:nth-child(1) {
+      margin-left: 0px;
+    }
+  }
+  .craftsmenCard {
+    width: 25vw;
+    height: 25vw;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.25)
+    );
+    border: 10px solid #ffffff;
+    border-radius: 30px 30px 30px 0px;
+    margin-left: -10px;
+    position: relative;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    @include media("<=tablet") {
+      height: 30vw;
+      width: 30vw;
+    }
+    @include media("<=phone") {
+      width: 90vw;
+      height: 90vw;
+    }
+    &:hover {
+      border-radius: 30px 30px 30px 0px;
+      .craftsmenImg {
+        top: 7vw;
+        left: -7vw;
+        transform: scale3d(0.4, 0.4, 1);
+
+        @include media("<=tablet") {
+          border: 0px;
+          top: 8vw;
+          left: -8vw;
+        }
+        @include media("<=phone") {
+          left: -25vw;
+          top: 14vh;
+        }
+      }
+    }
+    .craftsmenImg {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      // width: calc(100% - 10px);
+      // height: calc(100% - 10px);
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+
+      img {
+        border-radius: 30px 30px 30px 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .craftsmenDetails {
+      padding: 1rem;
+      position: absolute;
+      border-radius: 30px 30px 30px 0px;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      background: #e8e8e8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      @include media("<=tablet") {
+        align-items: flex-end;
+      }
+      h3,
+      h4 {
+        font-style: normal;
+        font-weight: 600;
+        width: fit-content;
+        color: #57534e;
+      }
+      h3 {
+        font-size: 20px;
+        @include media("<=tablet") {
+          font-size: 1rem;
+        }
+      }
+      h4 {
+        font-size: 15px;
+        @include media("<=tablet") {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+@for $i from 1 through 20 {
+  .craftsmenContainer:nth-child(1n + #{$i}) {
+    z-index: $i;
+  }
+}
+
+.s-px-5 {
+  padding-inline-start: 3rem;
+  padding-inline-end: 3rem;
+  @include media("<=tablet") {
+    padding-inline-start: 0.5rem;
+    padding-inline-end: 0.5rem;
+  }
+}

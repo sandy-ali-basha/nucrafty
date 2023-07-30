@@ -1,0 +1,28 @@
+.Uniqueness {
+  padding-inline-start: 5vw;
+  padding-inline-end: 5vw;
+  .unique_card_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #44403c;
+    @include media("<=phone") {
+      line-height: initial;
+      font-size: 1rem;
+    }
+  }
+
+  .unique_card {
+    border: none !important;
+  }
+  .unique_img {
+    height: 90vh;
+    object-fit: cover;
+    @include media("<=tablet") {
+      height: 30vh;
+    }
+    @include media("<=phone") {
+      height: 50vh;
+    }
+  }
+}
